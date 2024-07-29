@@ -1,0 +1,117 @@
+<section class="container section-work-together" id="work-together">
+  <div class="inside-wrapper">
+    <h2 class="title-work-together">
+      <picture>
+        <!-- Desktop -->
+        <!-- .webp -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/footer/logo-tablet.webp    1x,
+            ./img/footer/logo-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          width="70"
+          height="70"
+        />
+        <!-- .png -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./img/footer/user@1x_tablet.png 1x,
+            ./img/footer/user@2x_tablet.png 2x
+          "
+          type="image/png"
+          width="70"
+          height="70"
+        />
+        <!-- Mobile -->
+        <!-- .webp -->
+        <source
+          media="(max-width:767.98px)"
+          srcset="
+            ./img/footer/logo-mobile.webp    1x,
+            ./img/footer/logo-mobile@2x.webp 2x
+          "
+          type="image/webp"
+          width="44"
+          height="44"
+        />
+        <!-- .png -->
+        <source
+          media="(max-width:767.98px)"
+          srcset="
+            ./img/footer/user@1x_mobile.png 1x,
+            ./img/footer/user@2x_mobile.png 2x
+          "
+          type="image/png"
+          width="44"
+          height="44"
+        />
+        <img
+          class="img-work-together"
+          src="./img/footer/user@1x_tablet.png"
+          alt="Users photo"
+          width="70"
+          height="70"
+        />
+      </picture>
+      Let&#39;s
+      <span class="accent-work-together">work</span>
+      together
+    </h2>
+    <form class="form-work-together">
+      <div class="input-wrapper">
+        <input
+          type="email"
+          class="input-form-work-together"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+          name="email"
+        />
+        <p class="input-success visually-hidden">Success!</p>
+        <p class="input-invalid visually-hidden">Invalid email, try again</p>
+      </div>
+      <div class="comments-wrapper">
+        <input
+          class="comments-form-work-together"
+          placeholder="comments"
+          name="comments"
+          required
+        />
+      </div>
+      <button type="submit" class="button-form-work-together">Send</button>
+    </form>
+    <ul class="contacts-list-work-together">
+      <li>
+        <a
+          href="mailto:lloydjefferson@gmail.com"
+          class="contacts-item-work-together"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+      <li>
+        <a href="tel:+3801111111111" class="contacts-item-work-together"
+          >+380 11 1111 11 11</a
+        >
+      </li>
+    </ul>
+    <div class="modal-backdrop visually-hidden">
+      <div class="modal-wrapper">
+        <button type="button" class="close-button">
+          <svg class="close-icon">
+            <use href="./img/icons-sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h1 class="modal-wrapper-title">
+          Thank you for your interest in cooperation!
+        </h1>
+        <p class="modal-wrapper-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

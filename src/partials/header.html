@@ -1,13 +1,32 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header-container container">
+    <a class="logo" href="./index.html"
+      ><img
+        class="logo-img"
+        alt="foto jefferson"
+        width="80"
+        height="80"
+        srcset="./img/header/logo.webp 1x, ./img/header/logo@2x.webp 2x"
+        src="./img/header/logo.webp"
+      />
+      jefferson*</a
+    >
+    <nav class="nav">
+      <button class="burger-menu" type="button">
+        <svg class="burger" width="28" height="28">
+          <use href="./img/icons-sprite.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-container">
+        <button type="button" class="menu">Menu</button>
+        <ul class="menu-list">
+          <li><a class="menu-link" href="#about-me">About me</a></li>
+          <li><a class="menu-link" href="#benefits">Benefits</a></li>
+          <li><a class="menu-link" href="#projects">Projects</a></li>
+          <li><a class="menu-link" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a class="header-link" href="#work-together">Order the project</a>
+  </div>
 </header>

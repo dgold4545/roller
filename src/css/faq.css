@@ -1,0 +1,126 @@
+.section-faq {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.faq-ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.faq-el {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid rgba(250, 250, 250, 0.4);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+}
+.faq-text {
+  padding-top: 16px;
+}
+
+.icon-up-arrow {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+  fill: #fafafa;
+  object-fit: cover;
+}
+.title-faq {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  color: rgba(250, 250, 250, 0.4);
+}
+.faq-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  width: calc(100% - 48px);
+}
+.faq-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  overflow-y: hidden;
+}
+.faq-btn {
+  display: block;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  background: #1c1d20;
+}
+.an-icon-button-down,
+.an-icon-button-up {
+  display: none;
+}
+.faq-el .open {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .section-faq {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .faq-el {
+    border-top: 1px solid rgba(250, 250, 250, 0.4);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    padding-top: 32px;
+  }
+  .faq-text {
+    padding-top: 26px;
+  }
+
+  .faq-btn {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+  }
+  .an-icon-button-down,
+  .an-icon-button-up {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-faq {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .faq-el {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-left: 20px;
+    width: 50%;
+    border-top: 1px solid rgba(250, 250, 250, 0.4);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  .faq-text {
+    padding-top: 26px;
+  }
+  .faq-el:nth-child(2n-1) {
+    border-right: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  .an-icon-button-down,
+  .an-icon-button-up {
+    display: none;
+  }
+}

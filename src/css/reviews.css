@@ -1,0 +1,113 @@
+.reviews {
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+}
+.revievs-swiper-container {
+  overflow: hidden;
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.reviews-slide {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  width: 344px;
+  height: 302px !important;
+  overflow: auto;
+}
+
+.review-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+.review-comment {
+  /* margin: 8px 0; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.review-author {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-top: 32px;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding-bottom: 32px;
+}
+
+.reviews-container {
+  position: relative;
+}
+
+.reviews-btn-next,
+.reviews-btn-prev {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60%;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+
+  cursor: pointer;
+}
+
+.swiper-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  position: relative;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reviews-btn-next::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/arrow-narrow-right.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.reviews-btn-prev::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/arrow-narrow-left.svg) no-repeat center center;
+  background-size: contain;
+}
+
+@media (min-width: 1440px) {
+  .reviews-slide {
+    width: 332px;
+    height: 302px !important;
+  }
+}

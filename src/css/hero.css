@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.2),
+      rgba(46, 47, 66, 0.2)
+    ),
+    url(../img/hero/bg-mobile.png);
+  height: 100%;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 374px) {
+  .hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+    row-gap: 20px;
+  }
+  .hero-title {
+    padding-top: 281px;
+    margin-bottom: 212px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    width: 343px;
+  }
+  .hero-item {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .hero-title {
+    padding-top: 281px;
+    margin-bottom: 212px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    width: 343px;
+  }
+  .hero-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    column-gap: 4px;
+  }
+  .hero-item {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.2),
+        rgba(46, 47, 66, 0.2)
+      ),
+      url(../img/hero/bg-tablet.png);
+  }
+  .hero-title {
+    padding-top: 300px;
+    font-size: 90px;
+    width: 632px;
+    margin-bottom: 187px;
+  }
+  .hero-list {
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 8px;
+  }
+  .hero-item {
+    font-size: 16px;
+    padding: 18px 17px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.2),
+        rgba(46, 47, 66, 0.2)
+      ),
+      url(../img/hero/bg-desktop.png);
+    margin-bottom: 48px;
+  }
+  .hero-title {
+    width: 1084px;
+    margin-bottom: 243px;
+  }
+  .hero-item {
+    padding: 18px;
+  }
+}
